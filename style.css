@@ -1,0 +1,381 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #0A1F44;
+    /* Dark blue color */
+    padding: 30px 0;
+    /* Adjust padding for top and bottom */
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensure content is spaced between the left and right */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 200px;
+    /* Size of the logo */
+    margin-right: 20px;
+    /* Space between logo and text */
+}
+
+.header-text {
+    text-align: center;
+    width: 100%;
+    /* Allow text to be centered within the remaining space */
+    color: white;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+    /* Larger font size for "PTFI" */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header-text p {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+    /* Smaller font size for the tagline */
+    letter-spacing: 0.5px;
+}
+
+/* About Us Section */
+.about-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    text-align: left;
+}
+
+.about-content h2 {
+    text-align: center;
+    color: #0A1F44;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+.about-content h3 {
+    color: #0A1F44;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    color: #555;
+}
+
+.about-content li {
+    margin-bottom: 10px;
+}
+
+.about-content strong {
+    color: #0A1F44;
+}
+
+
+/* Navigation Bar */
+.main-nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.main-nav a:hover {
+    background-color: #555;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('th\ 3.jpeg');
+    /* Update the path if needed */
+    background-size: cover;
+    /* Make sure the image covers the entire section */
+    background-position: center;
+    height: 600px;
+    /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    /* Add a semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.learn-more {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #00b4d8;
+    color: #00b4d8;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.learn-more:hover {
+    background-color: #00b4d8;
+    color: white;
+}
+
+/* Adjust the styles for better visuals */
+.content-section {
+    margin: 40px auto;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-container h2 {
+    color: #0A1F44;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-container p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.diagram-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+ul,
+ol {
+    margin: 20px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+
+/* Form Section */
+.form-section {
+    margin: 20px auto;
+    max-width: 600px;
+    /* Centered and with a max width */
+}
+
+/* Form Box */
+.form-box {
+    background-color: #f9f9f9;
+    /* Light grey background for the boxes */
+    padding: 30px;
+    /* Increased padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Margin between boxes */
+    box-sizing: border-box;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.options label {
+    margin-right: 15px;
+}
+
+.match-button,
+.save-button,
+.generate-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Add space below the buttons */
+}
+
+.match-button:hover,
+.save-button:hover,
+.generate-button:hover {
+    background-color: #555;
+}
+
+/* Result Section */
+.result-display {
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    min-height: 100px;
+    border: 1px solid #ccc;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+    text-align: left;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.contact-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icon {
+    width: 30px;
+    /* Adjust size as needed */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    /* Slightly enlarge the icon on hover */
+}

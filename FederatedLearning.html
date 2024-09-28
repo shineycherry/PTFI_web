@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federated Learning Overview</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS file -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <img src="th.jpeg" alt="PTFI Logo" class="logo">
+            <div class="header-text">
+                <h1 class="main-title">PTFI</h1>
+                <p class="sub-title">Privacy Technologies For Financial Intelligence</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Federated Learning Content Section -->
+    <section class="content-section">
+        <div class="content-container">
+            <h2>Introduction to Federated Learning</h2>
+            <img src="fed.jpeg" alt="PTFI Logo" class="logo">
+            <p>Federated Learning is a distributed machine learning approach that allows multiple devices or servers to
+                collaboratively train a model without sharing their raw data. This method ensures data privacy and
+                security, as the data remains on the local devices, and only model updates are shared and aggregated to
+                improve the global model.</p>
+
+
+
+            <h3>How Federated Learning Works</h3>
+            <ol>
+                <li><strong>Client Selection:</strong> In this step, a set of devices (clients) is selected to
+                    participate in the training process. These devices possess local datasets, which they use to train
+                    the model.</li>
+                <li><strong>Local Model Training:</strong> Each selected device trains the model using its local data.
+                    The training process occurs independently on each device, without any data leaving the device.</li>
+                <li><strong>Sending the Local Model:</strong> Once the training is completed, each device sends its
+                    updated model weights (not the data) to a central server.</li>
+                <li><strong>Model Aggregation:</strong> The central server aggregates the model updates from all the
+                    devices, combining them to form a new global model. This step ensures that the knowledge gained from
+                    each device is included in the updated global model.</li>
+                <li><strong>Model Distribution:</strong> The aggregated global model is then sent back to the devices,
+                    where the process can be repeated, further refining the model.</li>
+            </ol>
+
+            <h3>Benefits of Federated Learning</h3>
+            <ul>
+                <li><strong>Privacy-Preserving:</strong> Data never leaves the device, ensuring that sensitive
+                    information remains private.</li>
+                <li><strong>Reduced Data Transfer:</strong> Only model updates are shared, reducing network bandwidth
+                    requirements.</li>
+                <li><strong>Collaborative Learning:</strong> Multiple devices can contribute to improving the global
+                    model, leading to more accurate and robust results.</li>
+                <li><strong>Scalable:</strong> Federated Learning can work with a large number of devices, making it
+                    suitable for large-scale applications.</li>
+            </ul>
+
+            <h3>Federated Learning Workflow Diagram</h3>
+            <p>The following diagram illustrates the workflow of Federated Learning:</p>
+            <img src="fed1.png" alt="Federated Learning Diagram" class="diagram-image">
+            <p>This diagram shows the process where local models are trained on individual devices, aggregated by the
+                central server, and then distributed back to the devices for further refinement.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 PTFI. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram-icon.jpeg" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
